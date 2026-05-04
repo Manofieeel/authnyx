@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 3000;
 const DISCORD_CONFIG = {
     CLIENT_ID: process.env.CLIENT_ID,
     CLIENT_SECRET: process.env.CLIENT_SECRET,
-    REDIRECT_URI: process.env.REDIRECT_URI || `http://localhost:3000/auth/callback`,
+    REDIRECT_URI: process.env.REDIRECT_URI || 'http://localhost:3000/auth/callback',
     BOT_TOKEN: process.env.BOT_TOKEN,  // ← SEM VALOR FIXO!
 };
 
