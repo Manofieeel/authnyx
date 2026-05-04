@@ -5,12 +5,12 @@ const axios = require('axios');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// // Configuração do Discord - USANDO VARIÁVEIS DE AMBIENTE APENAS
+// Configuração do Discord - USANDO VARIÁVEIS DE AMBIENTE
 const DISCORD_CONFIG = {
     CLIENT_ID: process.env.CLIENT_ID,
     CLIENT_SECRET: process.env.CLIENT_SECRET,
-    REDIRECT_URI: process.env.REDIRECT_URI || 'http://localhost:3000/auth/callback',
-    BOT_TOKEN: process.env.BOT_TOKEN,  // ← SEM VALOR FIXO!
+    REDIRECT_URI: process.env.REDIRECT_URI || 'https://authnyx.onrender.com/auth/callback',
+    BOT_TOKEN: process.env.BOT_TOKEN
 };
 
 const DISCORD_API = 'https://discord.com/api/v10';
